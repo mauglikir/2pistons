@@ -1,0 +1,92 @@
+{% if categories %}
+{# <div class="container">
+  <nav id="menu" class="navbar">
+      <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+    </div>
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        {% for category in categories %}
+        {% if category.children %}
+        <li class="dropdown"><a href="{{ category.href }}" class="dropdown-toggle" data-toggle="dropdown">{{ category.name }}</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-inner"> {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+              <ul class="list-unstyled">
+                {% for child in children %}
+                <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+                {% endfor %}
+              </ul>
+              {% endfor %}</div>
+            <a href="{{ category.href }}" class="see-all">{{ text_all }} {{ category.name }}</a> </div>
+        </li>
+        {% else %}
+        <li><a href="{{ category.href }}">{{ category.name }}</a></li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</div> #}
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark special-color-dark">
+
+  <!-- Navbar brand -->
+  <a class="navbar-brand text-uppercase" href="#">
+    <div id="logo">{% if logo %}<a href="{{ home }}"><img src="{{ logo }}" title="{{ name }}" alt="{{ name }}" class="img-responsive" /></a>{% else %}
+      <h1><a href="{{ home }}">{{ name }}</a></h1>
+      {% endif %}</div>
+  </a>
+
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2"
+    aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      {% for category in categories %}
+        {% if category.children %}
+
+      <!-- Features -->
+      <li class="nav-item dropdown mega-dropdown active">
+        <a href="{{ category.href }}" class="dropdown-toggle dropdown-toggle text-uppercase" id="navbarDropdownMenuLink2" data-toggle="dropdown">{{ category.name }}</a>
+        <div class="dropdown-menu mega-menu v-2 z-depth-1 special-color py-5 px-3"
+          aria-labelledby="navbarDropdownMenuLink2">
+          <div class="dropdown-inner"> {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+            <ul class="list-unstyled">
+              {% for child in children %}
+              <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+              {% endfor %}
+            </ul>
+            {% endfor %}</div>
+          <a href="{{ category.href }}" class="see-all">{{ text_all }} {{ category.name }}</a> </div>
+            
+        
+      </li>
+    
+      
+      
+
+      {% endif %}
+        {% endfor %}
+
+    </ul>
+    
+    <!-- Search form -->
+    <form class="form-inline">
+      <div class="md-form my-0">
+        {{ search }}
+      </div>
+    </form>
+
+  </div>
+  <!-- Collapsible content -->
+
+</nav>
+<!-- Navbar -->
+{% endif %} 

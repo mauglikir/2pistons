@@ -1,0 +1,15 @@
+2020-05-02 11:03:44 - PHP Warning:  mysqli::__construct(): MySQL server has gone away in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 7
+2020-05-02 11:03:44 - PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=59398 in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 7
+2020-05-02 11:03:44 - PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 7
+2020-05-02 11:03:44 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 10
+2020-05-02 11:03:44 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 10
+2020-05-04 13:59:09 - PHP Warning:  mysqli::__construct(): MySQL server has gone away in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 7
+2020-05-04 13:59:09 - PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=64233 in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 7
+2020-05-04 13:59:09 - PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 7
+2020-05-04 13:59:09 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 10
+2020-05-04 13:59:09 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 10
+2020-05-04 13:59:36 - PHP Warning:  mysqli::__construct(): MySQL server has gone away in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 7
+2020-05-04 13:59:36 - PHP Warning:  mysqli::__construct(): Error while reading greeting packet. PID=66066 in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 7
+2020-05-04 13:59:36 - PHP Warning:  mysqli::__construct(): (HY000/2006): MySQL server has gone away in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 7
+2020-05-04 13:59:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 10
+2020-05-04 13:59:36 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /Applications/MAMP/htdocs/system/library/db/mysqli.php on line 10
